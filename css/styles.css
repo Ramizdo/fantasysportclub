@@ -1,10 +1,209 @@
-containerLogo {
-    background-color: aqua;
+/* ++++++++++++++++++++++++++++++ RESET ++++++++++++++++++++++++++++++ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container-fluid {
+/* ++++++++++++++++++++++++++++++ FUENTE MINECRAFT ++++++++++++++++++++++++++++++ */
+
+@font-face {
+    font-family: 'minecraft';
+    src: url(../fonts/minecraft.ttf);
+}
+
+/* ++++++++++++++++++++++++++++++ GENERALES ++++++++++++++++++++++++++++++ */
+
+body {
+    font-family: 'Teko', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++ */
+
+#header {
+    background-color: #00088E;
+    position: fixed;
+    width: 100%;
+
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+
+}
+
+/* .fsc {
+    font-family: 'minecraft';
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin: -40px 5px 0px 15px;
+} */
+
+/* .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+} */
+
+/* .menu a:hover {
+    color: #FFFFFF;
+} */
+
+/* MENU */
+.nav-link {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00088E;
+    font-size: 1rem;
+    /* background-color: #FFFFFF; */
+    text-align: center;
+    /* margin: -40px 5px 0px 5px; */
+}
+
+.nav-item {
+    background-color: #FFFFFF;
+    width: 100px;
+    border: 1px solid;
+}
+
+/* ++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++ */
+
+.main {
+    padding: 100px 0px 50px 0px;
+}
+
+/* ++++++++++++++++++++++++++++++ BANNER ++++++++++++++++++++++++++++++ */
+
+.banner {
+    background-image: url(../img/fondo-champions.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
+
+/* ++++++++++++++++++++++++++++++ TITULO Y SUBTITULO ++++++++++++++++++++++++++++++ */
+
+.titulo,
+.sub-titulo {
+    font-family: 'minecraft';
+    color: #FFFFFF;
+}
+
+/* ++++++++++++++++++++++++++++++ SECTION ++++++++++++++++++++++++++++++ */
+
+.card-title {
+    background-color: #00088E;
+    color: #FFFFFF;
+    font-family: minecraft;
+    height: 50px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 0.5fr 0.5fr 1fr 0.7fr .7fr .7fr 0.5fr;
+    grid-template-rows: repeat(9, .5fr)
+}
+
+/* ETIQUETAS */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #4DFFFF;
+    padding: 5px;
+}
+
+/* IMAGENES GRID */
+.trofeo {
+    width: 40px;
+}
+
+.bandera {
+    width: 20px;
+}
+
+
+/* @media (min-width: 375px) {
+    .text-center {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .text-center {
+        font-size: 1.2rem;
+    }
+
+    .trofeo {
+        width: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-center {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-center {
+        font-size: 1.6rem;
+    }
+} */
+
+
+/* JUGADOR */
+.linea-impar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CACFD2;
+    margin-top: 2px;
+}
+
+.linea-par {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F3F4;
+    margin-top: 2px;
+}
+
+
+/* ++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++ */
+
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000040;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+} */

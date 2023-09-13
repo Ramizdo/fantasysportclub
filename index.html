@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ICON -->
+    <link rel="shortcut icon" href="img/logo1.PNG" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -19,49 +32,652 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg ">
+    <!-- HEADER -->
+    <header id="header">
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">FantasySportClub</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="img/logo1.PNG" alt="Fantasy Sport Club" class="logo">
+                <!-- <a class="fsc" href="#">FantasySportClub</a> -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-start " id="navbarOffcanvas">
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Ranking</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Competicion</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Participantes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">T&C</a>
-                            </li>
-                        </ul>
-                    </div>
+                </button> -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/competiciones.html">Competiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/players.html">Jugador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tyc.html">T & C</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+
     </header>
 
-    <main>
+    <!-- MAIN -->
+    <main class="main">
+        <section>
+            <div class="banner">
+                <h1 class="titulo text-center">¿Te crees el mejor tecnico?</h1>
+                <h2 class="sub-titulo text-center">¡Demuestralo!</h2>
+            </div>
 
+            <div class="container">
+                <h4 class=" card-title"><b>Ranking General</b></h4>
+            </div>
+
+            <div class="container grid-container">
+
+                <!-- ETIQUETAS -->
+                <div class="grid-item">#</div>
+                <div class="grid-item">NOMBRE</div>
+                <div class="grid-item">P</div>
+                <div class="grid-item">T</div>
+                <div class="grid-item">PTS</div>
+                <div class="grid-item"><img class="trofeo" alt="Trofeo de Oro" src="img/trofeo-oro.png"></div>
+                <div class="grid-item"><img class="trofeo" alt="Trofeo de plata" src="img/trofeo-plata.png"></div>
+                <div class="grid-item"><img class="trofeo" alt="Trofeo de bronce" src="img/trofeo-bronce.png"></div>
+                <div class="grid-item">MP</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">3</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">4</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">7</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">8</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">9</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">10</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">11</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">12</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">13</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">14</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">15</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">16</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">17</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">18</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">19</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">20</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">21</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">22</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">23</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">24</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">25</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">26</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">27</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">28</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">29</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">30</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">31</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">32</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">33</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">34</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">35</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">36</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">37</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">38</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">39</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">40</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">41</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">42</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">43</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">44</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR -->
+                <div class="text-center linea-impar">45</div>
+                <div class="text-center linea-impar">Douglas R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">5</div>
+                <div class="text-center linea-impar">7432</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">46</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+                <!-- JUGADOR IMPAR-->
+                <div class="text-center linea-impar">47</div>
+                <div class="text-center linea-impar">Ildemaro R</div>
+                <div class="text-center linea-impar"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-impar">4</div>
+                <div class="text-center linea-impar">4332</div>
+                <div class="text-center linea-impar">0</div>
+                <div class="text-center linea-impar">2</div>
+                <div class="text-center linea-impar">1</div>
+                <div class="text-center linea-impar">2</div>
+
+                <!-- JUGADOR PAR-->
+                <div class="text-center linea-par">48</div>
+                <div class="text-center linea-par">Alexis M</div>
+                <div class="text-center linea-par"><img class="bandera" alt="venezuela" src="img/venezuela.png">
+                </div>
+                <div class="text-center linea-par">6</div>
+                <div class="text-center linea-par">3432</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">2</div>
+                <div class="text-center linea-par">1</div>
+                <div class="text-center linea-par">1</div>
+
+            </div>
+        </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer">
-                <span>© Copyright 2023. Diseñado con ❤️.</span>
-            </div>
-        </footer>
-        <!-- FIN FOOTER -->
+        <div class="footer">
+            <span>© Copyright 2023. Diseñado con ❤️.</span>
+        </div>
     </footer>
 
+    <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>
