@@ -1,0 +1,14 @@
+name: "Test deploy integración github - s3"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-20.04
+
+    steps:
+
+      - uses: actions/checkout@v3      
