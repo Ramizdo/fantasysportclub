@@ -91,8 +91,8 @@ a {
 
 /* ++++++++++++++++++++++++++++++ BANNER ++++++++++++++++++++++++++++++ */
 
-.banner {
-    /*background-image: url(../img/fondo-champions.jpeg);*/  
+/* .banner {
+    background-image: url(../img/fondo-champions.jpeg); 
     background-image: url(https://s1.1zoom.me/big0/335/Footbal_Men_Ball_Legs_493200.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-}
+} */
 .carousel-body {
   width: 100%;
   height: 380px;
@@ -140,10 +140,22 @@ a {
 }
 /* ++++++++++++++++++++++++++++++ TITULO Y SUBTITULO ++++++++++++++++++++++++++++++ */
 
-.titulo,
-.sub-titulo {
+.titulo {
     font-family: 'minecraft';
     color: #FFFFFF;
+}
+
+.sub-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #4DFFFF;
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-bottom: 2px;
 }
 
 /* ++++++++++++++++++++++++++++++ SECTION ++++++++++++++++++++++++++++++ */
@@ -152,6 +164,7 @@ a {
     background-color: #00088E;
     color: #FFFFFF;
     font-family: minecraft;
+    font-size: 15px;
     height: 50px;
     padding: 20px;
     margin-top: 30px;
@@ -237,6 +250,77 @@ a {
 }
 
 
+/* ++++++++++++++++++++++++++++++ TERMINOS & CONDICIONES ++++++++++++++++++++++++++++++ */
+
+.premiacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cajaGrisOscuro {
+    max-width: 100%;
+    width: 100vw;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    background-color: #CACFD2;
+}
+
+.cajaGrisClaro {
+    max-width: 100%;
+    width: 100vw;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    background-color: #F2F3F4;
+}
+
+.cajaGrisOscuro p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.3rem;
+}
+
+.cajaGrisClaro p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+
+    .premiacion {
+        flex-direction: row;
+    }
+
+    .cajaGrisOscuro {
+        width: 100vw;
+        height: 620px;
+        background-color: #CACFD2;
+    }
+
+    .cajaGrisClaro {
+        width: 100vw;
+        height: 620px;
+        background-color: #F2F3F4;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .cajaGrisOscuro {
+        width: 100vw;
+        height: 520px;
+        background-color: #CACFD2;
+    }
+
+    .cajaGrisClaro {
+        width: 100vw;
+        height: 520px;
+        background-color: #F2F3F4;
+    }
+}
 
 
 /* ++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++ */
