@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -39,12 +43,12 @@
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
                 <img src="img/logo1.PNG" alt="Fantasy Sport Club" class="logo">
-                <!-- <a class="fsc" href="#">FantasySportClub</a> -->
+                <p class="fsc">FANTASY SPORT CLUB</p>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Ranking</a>
@@ -56,10 +60,10 @@
                             <a class="nav-link" href="pages/players.html">Jugador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/tyc.html">T & C</a>
+                            <a class="nav-link" href="pages/tyc.html">Info</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </nav>
 
@@ -68,9 +72,51 @@
     <!-- MAIN -->
     <main class="main">
         <section>
-            <div class="banner">
-                <h2 class="titulo text-center">¿Te crees el mejor tecnico?</h2>
-                <h3 class="titulo text-center">¡Demuestralo!</h3>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/fantasy3.avif" class="img-carousel" alt="Manchester City Campeon">
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="img/fantasy7.png" class="img-carousel" alt="Manchester City Campeon">
+                    </div> -->
+                    <div class="carousel-item">
+                        <img src="img/fantasy5.webp" class="img-carousel" alt="Man City Campeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-city.jpeg" class="img-carousel" alt="Manchester City Campeon">
+                        <!-- <div class="carousel-caption">
+                            <h1 class="titulo text-center">Elige tu equipo</h1>
+                            <h2 class="sub-titulo text-center">¡Se el mejor!</h2>
+                        </div> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-madrid.png" class="img-carousel" alt="Real Madrid Campeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-chelsea.avif" class="img-carousel" alt="Chelsea Campeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-bayern.avif" class="img-carousel" alt="Bayern Munich Campeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-liverpool.webp" class="img-carousel" alt="Liverpool Campeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/campeon-barcelona.jpeg" class="img-carousel" alt="FCBar Campeon">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
             <div class="container">
@@ -672,15 +718,29 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer">
+        <!-- <div class="footer">
             <span>© Copyright 2023. Diseñado con ❤️.</span>
+        </div> -->
+
+        <div class="container-menu-footer">
+            <div class="container menu-footer">
+                <a class="nav-footer" href="index.html"><i class="fa-solid fa-ranking-star"></i>Ranking</a>
+                <a class="nav-footer" href="pages/competiciones.html"><i class="fa-solid fa-object-ungroup"></i>
+                    Competicion</a>
+                <a class="nav-footer" href="pages/players.html"><i class="fa-solid fa-users"></i>Jugador</a>
+                <a class="nav-footer" href="pages/tyc.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+            </div>
         </div>
+
     </footer>
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>
+
+    <!-- SCRIPT FONTS-AWOSOME -->
+    <script src="https://kit.fontawesome.com/773a0e97ab.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
