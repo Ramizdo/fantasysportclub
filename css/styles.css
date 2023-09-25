@@ -10,7 +10,17 @@
 
 @font-face {
     font-family: 'minecraft';
-    src: url(../fonts/minecraft.ttf);
+    src: url(../fonts/minecraft/minecraft.ttf);
+}
+
+@font-face {
+    font-family: 'ponter-alt';
+    src: url(../fonts/ponter/ponter-alt.ttf);
+}
+
+@font-face {
+    font-family: 'ponter-bold';
+    src: url(../fonts/ponter/ponter-bold.ttf);
 }
 
 /* ++++++++++++++++++++++++++++++ GENERALES ++++++++++++++++++++++++++++++ */
@@ -33,21 +43,32 @@ a {
     background-color: #00088E;
     position: fixed;
     width: 100%;
+    z-index: 2;
 
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    margin-left: 30px;
+    width: 70px;
+    height: 70px;
+    /* margin-bottom: 5px; */
+    /* margin-left: 30px; */
 
 }
 
-/* .fsc {
-    font-family: 'minecraft';
+.fsc {
+    font-family: 'Teko', cursive;
+    letter-spacing: 0.2rem;
+    /* font-family: 'minecraft'; */
     color: #FFFFFF;
-    font-size: 2rem;
-    margin: -40px 5px 0px 15px;
+    font-size: 2.2rem;
+    margin: 0px;
+    -webkit-text-stroke: 1px #FFFFFF;
+    color: transparent;
+    /* margin: -40px 5px 0px 15px; */
+}
+
+/* .container-fluid p {
+    margin: 0px;
 } */
 
 /* .menu {
@@ -63,29 +84,29 @@ a {
 
 /* MENU */
 .nav-link {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #00088E;
-    font-size: 1rem;
+    font-family: 'ponter-alt', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.3rem;
     /* background-color: #FFFFFF; */
     text-align: center;
     /* margin: -40px 5px 0px 5px; */
 }
 
-.nav-item {
-    background-color: #FFFFFF;
+/* .nav-item {
+    background-color: #c54444;
     width: 100px;
     border: 1px solid;
-}
+} */
 
 /* ++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++ */
 
 .main {
-    padding: 100px 0px 50px 0px;
+    padding: 90px 0px 50px 0px;
 }
 
 /* ++++++++++++++++++++++++++++++ BANNER ++++++++++++++++++++++++++++++ */
 
-.banner {
+/* .banner {
     background-image: url(../img/fondo-champions.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +118,30 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+} */
+
+/* ++++++++++++++++++++++++++++++ CAROUSEL ++++++++++++++++++++++++++++++ */
+
+.img-carousel {
+    max-width: 100%;
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 5px;
 }
+
+@media (min-width: 425px) {
+    .img-carousel {
+        height: 40vh;
+    }
+
+}
+
+/* @media (min-width: 576px) {
+    .img-carousel {
+        height: 40vh;
+    }
+
+} */
 
 /* ++++++++++++++++++++++++++++++ TITULO Y SUBTITULO ++++++++++++++++++++++++++++++ */
 
@@ -128,7 +172,7 @@ a {
     font-size: 15px;
     height: 50px;
     padding: 20px;
-    margin-top: 30px;
+    /* margin-top: 130px; */
 }
 
 /* GRID */
@@ -209,6 +253,29 @@ a {
     margin-top: 2px;
 }
 
+/* ++++++++++++++++++++++++++++++ COMPETICION ++++++++++++++++++++++++++++++ */
+
+.competicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CACFD2;
+    width: 100vw;
+    height: 80vh;
+}
+
+/* ++++++++++++++++++++++++++++++ PLAYERS ++++++++++++++++++++++++++++++ */
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CACFD2;
+    width: 100vw;
+    height: 80vh;
+}
 
 /* ++++++++++++++++++++++++++++++ TERMINOS & CONDICIONES ++++++++++++++++++++++++++++++ */
 
@@ -283,6 +350,43 @@ a {
 }
 
 /* ++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++ */
+
+.container-menu-footer {
+    background-color: #00088E;
+    color: #FFFFFF;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* padding: 0px 5px; */
+
+}
+
+.nav-footer {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-footer i {
+    display: block;
+    font-size: 20px;
+    /* margin-bottom: 5px; */
+}
+
+.nav-footer:hover {
+    color: #06cde7;
+}
 
 /* .footer {
     position: absolute;
