@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* ++++++++++++++++++++++++++++++ FUENTE MINECRAFT ++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++ FUENTES ++++++++++++++++++++++++++++++ */
 
 @font-face {
     font-family: 'minecraft';
@@ -50,49 +50,28 @@ a {
 .logo {
     width: 70px;
     height: 70px;
-    /* margin-bottom: 5px; */
-    /* margin-left: 30px; */
-
 }
 
 .fsc {
     font-family: 'Teko', cursive;
     letter-spacing: 0.2rem;
-    /* font-family: 'minecraft'; */
     color: #FFFFFF;
     font-size: 2.2rem;
     margin: 0px;
     -webkit-text-stroke: 1px #FFFFFF;
     color: transparent;
-    /* margin: -40px 5px 0px 15px; */
 }
 
-/* .container-fluid p {
-    margin: 0px;
-} */
-
-/* .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-} */
-
-/* .menu a:hover {
-    color: #FFFFFF;
-} */
-
 /* MENU */
-.nav-link {
+
+/* .nav-link {
     font-family: 'ponter-alt', sans-serif;
     color: #FFFFFF;
     font-size: 1.3rem;
-    /* background-color: #FFFFFF; */
     text-align: center;
-    /* margin: -40px 5px 0px 5px; */
 }
 
-/* .nav-item {
+.nav-item {
     background-color: #c54444;
     width: 100px;
     border: 1px solid;
@@ -104,23 +83,7 @@ a {
     padding: 90px 0px 50px 0px;
 }
 
-/* ++++++++++++++++++++++++++++++ BANNER ++++++++++++++++++++++++++++++ */
-
-/* .banner {
-    background-image: url(../img/fondo-champions.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-} */
-
-/* ++++++++++++++++++++++++++++++ CAROUSEL ++++++++++++++++++++++++++++++ */
+/* CAROUSEL */
 
 .img-carousel {
     max-width: 100%;
@@ -140,7 +103,6 @@ a {
     .img-carousel {
         height: 40vh;
     }
-
 } */
 
 /* ++++++++++++++++++++++++++++++ TITULO Y SUBTITULO ++++++++++++++++++++++++++++++ */
@@ -163,23 +125,36 @@ a {
     margin-bottom: 2px;
 }
 
-/* ++++++++++++++++++++++++++++++ SECTION ++++++++++++++++++++++++++++++ */
-
+/* TITULO CON FONDO AZUL */
 .card-title {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #00088E;
     color: #FFFFFF;
-    font-family: minecraft;
-    font-size: 15px;
+    font-family: 'Teko';
+    font-size: 2rem;
     height: 50px;
-    padding: 20px;
-    /* margin-top: 130px; */
+    padding: 0px 10px;
+    margin: 0px;
+    letter-spacing: .1rem;
+}
+
+.card-title p {
+    margin: 0px;
+    display: inline-block;
+    font-size: .9rem;
+    color: #4DFFFF;
 }
 
 /* GRID */
 .grid-container {
     display: grid;
-    grid-template-columns: .5fr 1.5fr 0.5fr 0.5fr 1fr 0.7fr .7fr .7fr 0.5fr;
-    grid-template-rows: repeat(9, .5fr)
+    grid-template-columns: .5fr 1.7fr 0.5fr 0.5fr 1fr 0.7fr .7fr .7fr 0.3fr;
+    grid-template-rows: repeat(9, .5fr);
+    margin-bottom: 20px;
 }
 
 /* ETIQUETAS */
@@ -195,6 +170,11 @@ a {
     padding: 5px;
 }
 
+.grid-item-nombre {
+    align-items: flex-start;
+    padding: 5px 5px 5px 0px;
+}
+
 /* IMAGENES GRID */
 .trofeo {
     width: 40px;
@@ -203,7 +183,6 @@ a {
 .bandera {
     width: 20px;
 }
-
 
 /* @media (min-width: 375px) {
     .text-center {
@@ -233,8 +212,7 @@ a {
     }
 } */
 
-
-/* JUGADOR */
+/* POSICION JUGADOR */
 .linea-impar {
     display: flex;
     flex-direction: column;
@@ -244,6 +222,10 @@ a {
     margin-top: 2px;
 }
 
+.linea-impar-nombre {
+    align-items: flex-start;
+}
+
 .linea-par {
     display: flex;
     flex-direction: column;
@@ -251,6 +233,10 @@ a {
     align-items: center;
     background-color: #F2F3F4;
     margin-top: 2px;
+}
+
+.linea-par-nombre {
+    align-items: flex-start;
 }
 
 /* ++++++++++++++++++++++++++++++ COMPETICION ++++++++++++++++++++++++++++++ */
@@ -277,7 +263,7 @@ a {
     height: 80vh;
 }
 
-/* ++++++++++++++++++++++++++++++ TERMINOS & CONDICIONES ++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++ TERMINOS & CONDICIONES O INFO ++++++++++++++++++++++++++++++ */
 
 .premiacion {
     display: flex;
@@ -368,8 +354,6 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    /* padding: 0px 5px; */
-
 }
 
 .nav-footer {
@@ -381,18 +365,8 @@ a {
 .nav-footer i {
     display: block;
     font-size: 20px;
-    /* margin-bottom: 5px; */
 }
 
 .nav-footer:hover {
     color: #06cde7;
 }
-
-/* .footer {
-    position: absolute;
-    bottom: 0;
-    background-color: #000040;
-    color: #FFFFFF;
-    width: 100%;
-    text-align: center;
-} */
