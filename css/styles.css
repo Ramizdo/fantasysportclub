@@ -96,14 +96,13 @@ a {
     .img-carousel {
         height: 40vh;
     }
-
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 768px) {
     .img-carousel {
-        height: 40vh;
+        height: 60vh;
     }
-} */
+}
 
 /* ++++++++++++++++++++++++++++++ TITULO Y SUBTITULO ++++++++++++++++++++++++++++++ */
 
